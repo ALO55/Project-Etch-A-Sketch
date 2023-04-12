@@ -1,14 +1,15 @@
 const container = document.querySelector('#container');
-const containerh = document.querySelector('#containerh');
+let selection = 16;
 
-for(let number = 0; number < 16; number++){
-    const divs = document.createElement('div');
-    divs.classList.add('box');
-    container.appendChild(divs);
+for(let r = 0; r < selection; r++){
+    const row = document.createElement('div');
+    row.classList.add('row');
+    container.appendChild(row);
+
+    for(let c= 0; c < selection; c++){
+      const column = document.createElement('div');
+      column.classList.add('column');
+      row.appendChild(column);
+    }
 }
 
-for(let number = 0; number < 16; number++){
-    const divsh = document.createElement('div');
-    divsh.classList.add('box2');
-    container.appendChild(divsh);
-}
