@@ -13,3 +13,9 @@ for(let r = 0; r < selection; r++){
     }
 }
 
+const box = document.querySelectorAll('.column');
+box.forEach((box) =>{
+    box.addEventListener('mouseover', () => {
+        box.style.backgroundColor = 'black';
+    })
+});
