@@ -18,9 +18,22 @@ main{
 }
 
 #container, #settings{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border: 1px solid rgb(28, 13, 167);
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
 }
 
 #container{
@@ -30,14 +43,14 @@ main{
 }
 
 .row{
-   border: 1px solid red;
    display: flex;
    flex: 1;
+   border: 1px solid red;
 }
 
 .column {
-    border: 1px solid red;
     flex: 1;
+    border: 1px solid red;
 }
 
 footer{
