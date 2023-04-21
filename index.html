@@ -12,12 +12,17 @@
         <h1>Etch-a-sketch</h1>
     </header>
     <main>
+
       <div id="settings">
-        <button id="sizeSquares">Size of the grid</button>
+        <button id="sizeSquares">Size of the grid <div id="size">16x16</div></button> 
+        <button>Choose your color
+          <input type="color" id="color">
+        </button>
         <button id="rainbow">Rainbow</button>
         <button id="eraser">Eraser</button>
         <button id="clear">Clear</button>
       </div>
+
       <div id="container"></div>
     </main>
     <footer>
