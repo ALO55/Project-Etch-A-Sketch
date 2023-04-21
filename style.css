@@ -6,6 +6,7 @@ header{
     text-align: center;
     background-color: #000000;
     color: #fff;
+    font-size: 30px;
 }
 
 main{
@@ -14,13 +15,12 @@ main{
     margin: 100px auto;
     display: flex;
     gap: 20px;
-    border: 1px solid red;
 }
 
 #container, #settings{
     width: 600px;
     height: 600px;
-    border: 1px solid rgb(28, 13, 167);
+    
 }
 
 #settings {
@@ -35,9 +35,11 @@ button {
     width: 100px;
     height: 50px;
     background-color: #5deb4a;
+    border-radius: 8px;
 }
 
 #container{
+    border: 1px solid rgb(28, 13, 167);
     background-color: #ffffff;
     display: flex;
     flex-direction: column;

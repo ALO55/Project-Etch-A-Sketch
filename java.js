@@ -4,12 +4,14 @@ const colorInput = document.querySelector('#color');
 const rainbow = document.querySelector('#rainbow');
 const eraser = document.querySelector('#eraser');
 const clear = document.querySelector('#clear');
+const size =  document.querySelector('#size');
 let color = "#050505";
 let selection = 16;
 let row = '';
 let column = '';
 let box = '';
 let randomColor = false;
+
 
 function grid(selection){
   for(let r = 0; r < selection; r++){
@@ -34,6 +36,7 @@ function grid(selection){
     
     })
   });
+  size.textContent = selection + 'x' + selection; 
 }
 
 grid(selection);
